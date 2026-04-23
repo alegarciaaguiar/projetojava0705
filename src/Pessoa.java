@@ -1,5 +1,10 @@
-public class Pessoa {
+public abstract class Pessoa {
     protected String nome;
+
+    public abstract void quemSouEu();
+
+    public abstract void responsabilidade();
+
 
     public Pessoa() {
     }
@@ -15,4 +20,6 @@ public class Pessoa {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+
 }

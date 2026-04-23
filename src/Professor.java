@@ -1,5 +1,6 @@
-public class Professor extends Pessoa{
+public final class Professor extends Pessoa{
     private double salario;
+
 
     public Professor() {
     }
@@ -14,5 +15,17 @@ public class Professor extends Pessoa{
     public void setSalario(double salario) {
         this.salario = salario;
     }
+
+    @Override
+    public void quemSouEu() {
+        System.out.println("Sou o professor");
+    }
+
+    @Override
+    public void responsabilidade() {
+        System.out.println("Ensinar");
+    }
+
+
 }
 

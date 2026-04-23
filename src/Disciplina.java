@@ -14,9 +14,9 @@ public class Disciplina {
         this.p = p;
     }
     public void mostrarDisciplina() {
-        System.out.println( p.getNome() + " minstra " + nome_disciplina
+        System.out.println(p.getNome() + " minstra " + nome_disciplina
         );
 
 
-
+    }
 }
