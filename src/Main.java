@@ -4,7 +4,7 @@ public class Main {
         Aluno a = new Aluno();
         Aluno a2 = new Aluno("João", 123);
 
-        Professor p2 = new Professor ("Maria");
+        Professor p2 = new Professor ("Maria",10000);
         // Disciplina d = new Disciplina("POO");
 
         //d.matricular(a);
@@ -15,6 +15,9 @@ public class Main {
 
         p2.quemSouEu();
         System.out.println(CARGO.Coordenador);
+
+        p2.calcularSalario();
+        p2.aplicarBonus();
 
     }
 }

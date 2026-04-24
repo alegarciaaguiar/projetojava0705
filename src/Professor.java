@@ -1,11 +1,12 @@
-public final class Professor extends Pessoa{
+public final class Professor extends Pessoa implements Remuneravel{
     private double salario;
-
 
     public Professor() {
     }
 
-    public Professor(String nome) {
+    public Professor(String nome, double salario) {
+        this.nome = nome;
+        this.salario = salario;
     }
 
     public double getSalario() {
@@ -24,6 +25,14 @@ public final class Professor extends Pessoa{
     @Override
     public void responsabilidade() {
         System.out.println("Ensinar");
+    }
+
+    public void calcularSalario(){
+        System.out.println(salario);
+    }
+
+    public void aplicarBonus(){
+        System.out.println(salario*1.20);
     }
 
 
