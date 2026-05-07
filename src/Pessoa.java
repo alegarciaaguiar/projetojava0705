@@ -1,5 +1,7 @@
 public abstract class Pessoa {
     protected String nome;
+    protected int idade;
+
 
     public abstract void quemSouEu();
 
@@ -21,5 +23,11 @@ public abstract class Pessoa {
         this.nome = nome;
     }
 
+    public int getIdade() {
+        return idade;
+    }
 
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
 }
